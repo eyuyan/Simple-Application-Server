@@ -16,11 +16,15 @@ echo ""
 echo "欢迎安装宝塔面板Pro破解版！"
 echo ""
 echo -e "${red}[警告]"
+echo -e "${plain}本程序系个人制作，具备宝塔面板5.9专业版的所有功能"
+echo "如有侵权，请联系作者在第一时间处理"
+echo "安装并试用后，请在24小时内卸载"
+echo ""
 
 #开始菜单
 
 start_menu(){
-    clear
+    #clear
     echo "====================================================================="
     echo "	System Required: CentOS 7"
     echo "	Description: initial server"
@@ -41,7 +45,7 @@ start_menu(){
     	1)
 	#update_kernel
 	clear
-	#start_menu
+	start_menu
 	;;
 	2)
 	#wireguard_install
@@ -49,20 +53,20 @@ start_menu(){
 	;;
 	3)
 	#wireguard_update
-	#start_menu
+	start_menu
 	;;
 	4)
 	#wireguard_remove
-	#start_menu
+	start_menu
 	;;
 	5)
 	#content=$(cat /etc/wireguard/client.conf)
     	#echo "${content}" | qrencode -o - -t UTF8
-	#start_menu
+	start_menu
 	;;
 	6)
 	#add_user
-	#start_menu
+	start_menu
 	;;
 	0)
 	exit 1
@@ -70,7 +74,7 @@ start_menu(){
 	*)
 	#clear
 	echo "请输入正确数字"
-	sleep 5s
+	#sleep 5s
 	start_menu
 	;;
     esac
