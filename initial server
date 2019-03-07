@@ -9,7 +9,7 @@
 
 #判断系统
 if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
-	echo "正确的系统"
+	echo "脚本已经测试系统centos7.3"
 else
 	echo "暂时只支持centos"
 	exit 1  
