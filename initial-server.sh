@@ -12,7 +12,7 @@ start_menu(){
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
     echo "====================================================================="
-    echo "1. 安装依赖"
+    echo "1. 安装相关依赖"
     echo "2. 卸载安骑士"
     echo "3. 升级"
     echo "4. 卸载"
