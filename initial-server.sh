@@ -43,7 +43,7 @@ start_menu(){
 	;;
 	2)
 	clean_aqs
-	start_menu
+	##start_menu
 	;;
 	3)
 	#wireguard_update
