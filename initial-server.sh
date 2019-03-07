@@ -14,68 +14,9 @@ plain='\033[0m'
 ##检查是否为Root
 [ $(id -u) != "0" ] && { echo -e "${red}[错误]${plain} 你必须以 root 用户执行此安装程序"; exit 1; }
 
-##开始菜单
-start_menu(){
-    
-    echo "====================================================================="
-    echo "	System Required: CentOS 7"
-    echo "	Description: initial server"
-    echo "	Version: 0.1"
-    echo "	Author: sxlszzy"
-    echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
-    echo "====================================================================="
-   echo -e "${yellow}"
-    echo "1. 清理屏幕"
-    echo "2. 卸载安骑士"
-    echo "3. XX"
-    echo "4. XX"
-    echo "5. XX"
-    echo "6. XX"
-    echo "0. 退出脚本"
-   echo -e "${plain}"
-    echo
-    read -p "请输入数字:" num
-    case "$num" in
-    	1)
-	#update_kernel
-	clear
-	start_menu
-	;;
-	2)
-	echo "正在. 卸载安骑士"
-	clean_up1
-	start_menu
-	;;
-	3)
-	#wireguard_update
-	start_menu
-	;;
-	4)
-	#wireguard_remove
-	start_menu
-	;;
-	5)
-	#content=$(cat /etc/wireguard/client.conf)
-    	#echo "${content}" | qrencode -o - -t UTF8
-	start_menu
-	;;
-	6)
-	#add_user
-	start_menu
-	;;
-	0)
-	exit 1
-	;;
-	*)
-	##clear
-	echo "请输入正确数字"
-	#sleep 5s
-	start_menu
-	;;
-    esac
-}
 
-start_menu
+
+
 
 ## ==卸载安骑士==
 
@@ -149,3 +90,66 @@ echo "查看进程输入： ${red}chkconfig --list${plain}"
 
 
 
+
+
+##开始菜单
+start_menu(){
+    
+    echo "====================================================================="
+    echo "	System Required: CentOS 7"
+    echo "	Description: initial server"
+    echo "	Version: 0.1"
+    echo "	Author: sxlszzy"
+    echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
+    echo "====================================================================="
+   echo -e "${yellow}"
+    echo "1. 清理屏幕"
+    echo "2. 卸载安骑士"
+    echo "3. XX"
+    echo "4. XX"
+    echo "5. XX"
+    echo "6. XX"
+    echo "0. 退出脚本"
+   echo -e "${plain}"
+    echo
+    read -p "请输入数字:" num
+    case "$num" in
+    	1)
+	#update_kernel
+	clear
+	start_menu
+	;;
+	2)
+	echo "正在. 卸载安骑士"
+	clean_up
+	start_menu
+	;;
+	3)
+	#wireguard_update
+	start_menu
+	;;
+	4)
+	#wireguard_remove
+	start_menu
+	;;
+	5)
+	#content=$(cat /etc/wireguard/client.conf)
+    	#echo "${content}" | qrencode -o - -t UTF8
+	start_menu
+	;;
+	6)
+	#add_user
+	start_menu
+	;;
+	0)
+	exit 1
+	;;
+	*)
+	##clear
+	echo "请输入正确数字"
+	#sleep 5s
+	start_menu
+	;;
+    esac
+}
+start_menu
