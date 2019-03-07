@@ -79,9 +79,10 @@ service iptables save
 service iptables restart
 
 ##提示帮助
-echo "查看规则输入： ${red}iptables -L${plain}"
-echo "查看进程输入： ${red}ps -U root -u${plain}"
-echo "查看进程输入： ${red}chkconfig --list${plain}"
+##echo -e "${red}[填写文字]${plain}"
+echo -e "查看规则输入： ${red}iptables -L${plain}"
+echo -e "查看进程输入： ${red}ps -U root -u${plain}"
+echo -e "查看进程输入： ${red}chkconfig --list${plain}"
     echo "3. XX"
     echo "4. XX"
     echo "5. XX"
