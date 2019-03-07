@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+#=================================================
+#	System Required: CentOS 7
+#	Description: initial server
+#	Version: 0.1
+#	Author: sxlszzy
+#	address: https://github.com/sxlszzy/Simple-Application-Server/
+#=================================================
+
+#判断系统
+if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
+	echo "正确的系统"
+else
+	echo "暂时只支持centos"
+	exit 1  
+fi
+
+#定义变量
+#安装依赖
