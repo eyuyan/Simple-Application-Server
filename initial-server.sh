@@ -17,6 +17,8 @@ plain='\033[0m'
 #判断系统
 if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
 	echo "${green} 脚本已经测试系统centos7.3"
+	green (hello world with green color)
+	blue "hello world with blue color"
 else
 	echo "${red} 暂时只支持centos"
 	exit 1  
