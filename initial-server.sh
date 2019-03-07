@@ -43,7 +43,7 @@ start_menu(){
 	;;
 	2)
 	echo "正在. 卸载安骑士"
-	clean_up
+	clean_up1
 	start_menu
 	;;
 	3)
@@ -78,6 +78,11 @@ start_menu(){
 start_menu
 
 ## ==卸载安骑士==
+
+clean_up1() {
+    echo "删除残留......."
+}
+
 clean_up() {
 
 echo "# CentOS 安装依赖......."
