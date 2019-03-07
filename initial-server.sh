@@ -96,6 +96,9 @@ echo "卸载阿里云盾监控......."
 wget http://update.aegis.aliyun.com/download/uninstall.sh  && sh uninstall.sh
 wget http://update.aegis.aliyun.com/download/quartz_uninstall.sh && sh quartz_uninstall.sh
 
+service aegis stop #停止服务
+chkconfig --del aegis # 删除服务
+
 echo "删除残留......."
 pkill aliyun-service
 rm -fr /etc/init.d/agentwatch /usr/sbin/aliyun-service
