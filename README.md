@@ -14,3 +14,5 @@
 wget -N https://raw.githubusercontent.com/sxlszzy/Simple-Application-Server/master/initial-server.sh && chmod +x initial-server.sh && ./initial-server.sh
 
 wget -N initial-server.sh https://git.io/fhpiq && chmod +x initial-server.sh && ./initial-server.sh
+
+wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh
