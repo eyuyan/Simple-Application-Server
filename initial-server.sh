@@ -26,12 +26,12 @@ start_menu(){
     echo "====================================================================="
     echo -e "${plain}"
     echo -e "${green}"
-    echo "1. 1清理屏幕"
-    echo "2. 2卸载安骑士"
-    echo "3. 3安装相关依赖"
-    echo "4. 4卸载"
-    echo "5. 显示客户端二维码"
-    echo "6. 增加用户"
+    echo "1. 清理屏幕"
+    echo "2. 卸载安骑士"
+    echo "3. XX"
+    echo "4. XX"
+    echo "5. XX"
+    echo "6. XX"
     echo "0. 退出脚本"
     echo -e "${plain}"
     echo
@@ -43,7 +43,7 @@ start_menu(){
 	start_menu
 	;;
 	2)
-	#wireguard_install
+	clean_aqs
 	start_menu
 	;;
 	3)
