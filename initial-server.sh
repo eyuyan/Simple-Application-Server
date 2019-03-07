@@ -43,7 +43,7 @@ start_menu(){
 	;;
 	2)
 	echo "正在. 卸载安骑士"
-	clean_aqs
+	clean_up
 	start_menu
 	;;
 	3)
@@ -78,7 +78,7 @@ start_menu(){
 start_menu
 
 ## ==卸载安骑士==
-clean_aqs() {
+clean_up() {
 
 echo "# CentOS 安装依赖......."
 yum -y install curl
@@ -136,6 +136,7 @@ service iptables restart
 echo "查看规则输入： ${red}iptables -L${plain}"
 echo "查看进程输入： ${red}ps -U root -u${plain}"
 echo "查看进程输入： ${red}chkconfig --list${plain}"
+
 }
 
 
