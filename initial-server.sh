@@ -13,7 +13,7 @@ start_menu(){
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
     echo "====================================================================="
-    echo "1. 清理屏幕"
+    echo "1. 1清理屏幕"
     echo "2. 2卸载安骑士"
     echo "3. 3安装相关依赖"
     echo "4. 4卸载"
@@ -26,7 +26,7 @@ start_menu(){
     	1)
 	#update_kernel
 	clear
-	start_menu
+	#start_menu
 	;;
 	2)
 	#wireguard_install
@@ -34,20 +34,20 @@ start_menu(){
 	;;
 	3)
 	#wireguard_update
-	start_menu
+	#start_menu
 	;;
 	4)
 	#wireguard_remove
-	start_menu
+	#start_menu
 	;;
 	5)
 	#content=$(cat /etc/wireguard/client.conf)
     	#echo "${content}" | qrencode -o - -t UTF8
-	start_menu
+	#start_menu
 	;;
 	6)
 	#add_user
-	start_menu
+	#start_menu
 	;;
 	0)
 	exit 1
