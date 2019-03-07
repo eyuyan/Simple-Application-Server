@@ -2,26 +2,22 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #定义变量
-# 颜色
+
+##颜色
 blue='\033[0;34m'
 yellow='\033[0;33m'
 green='\033[0;32m'
 red='\033[0;31m'
 plain='\033[0m'
 
-#检查是否为Root
+##检查是否为Root
 [ $(id -u) != "0" ] && { echo -e "${red}[错误]${plain} 你必须以 root 用户执行此安装程序"; exit 1; }
 
-
-
-
-
-#开始菜单
-
+##开始菜单
 start_menu(){
     #clear
-    echo -e "${red}[版权]${plain}"
-    echo -e "${yellow}[提示]"
+    ##echo -e "${red}[版权]${plain}"
+    echo -e "${yellow}"
     echo "====================================================================="
     echo "	System Required: CentOS 7"
     echo "	Description: initial server"
@@ -30,6 +26,7 @@ start_menu(){
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
     echo "====================================================================="
     echo -e "${plain}"
+    echo -e "${green}"
     echo "1. 1清理屏幕"
     echo "2. 2卸载安骑士"
     echo "3. 3安装相关依赖"
@@ -37,6 +34,7 @@ start_menu(){
     echo "5. 显示客户端二维码"
     echo "6. 增加用户"
     echo "0. 退出脚本"
+    echo -e "${plain}"
     echo
     read -p "请输入数字:" num
     case "$num" in
