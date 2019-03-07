@@ -5,13 +5,13 @@ export PATH
 #开始菜单
 start_menu(){
     clear
-    echo "================================================="
+    echo "====================================================================="
     echo "	System Required: CentOS 7"
     echo "	Description: initial server"
     echo "	Version: 0.1"
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
-    echo "================================================="
+    echo "====================================================================="
     echo "1. 升级系统内核"
     echo "2. 安装wireguard"
     echo "3. 升级wireguard"
@@ -24,22 +24,28 @@ start_menu(){
     case "$num" in
     	1)
 	#update_kernel
+	start_menu
 	;;
 	2)
 	#wireguard_install
+	start_menu
 	;;
 	3)
 	#wireguard_update
+	start_menu
 	;;
 	4)
 	#wireguard_remove
+	start_menu
 	;;
 	5)
 	#content=$(cat /etc/wireguard/client.conf)
     	#echo "${content}" | qrencode -o - -t UTF8
+	start_menu
 	;;
 	6)
 	#add_user
+	start_menu
 	;;
 	0)
 	exit 1
