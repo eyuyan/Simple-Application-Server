@@ -12,19 +12,16 @@ plain='\033[0m'
 #检查是否为Root
 [ $(id -u) != "0" ] && { echo -e "${red}[错误]${plain} 你必须以 root 用户执行此安装程序"; exit 1; }
 
-echo ""
-echo "欢迎安装宝塔面板Pro破解版！"
-echo ""
-echo -e "${red}[警告]"
-echo -e "${plain}本程序系个人制作，具备宝塔面板5.9专业版的所有功能"
-echo "如有侵权，请联系作者在第一时间处理"
-echo "安装并试用后，请在24小时内卸载"
-echo ""
+
+
+
 
 #开始菜单
 
 start_menu(){
     #clear
+    echo -e "${red}[版权]${plain}"
+    echo -e "${yellow}[提示]"
     echo "====================================================================="
     echo "	System Required: CentOS 7"
     echo "	Description: initial server"
@@ -32,6 +29,7 @@ start_menu(){
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
     echo "====================================================================="
+    echo -e "${plain}"
     echo "1. 1清理屏幕"
     echo "2. 2卸载安骑士"
     echo "3. 3安装相关依赖"
