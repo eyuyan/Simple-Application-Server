@@ -16,7 +16,7 @@ if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
 	echo " 脚本已经测试系统centos7.3"
 	echo -e “\033[40;37m 黑底白字 \033[0m” 	
 else
-	echo "${red} 暂时只支持centos"
+	echo "暂时只支持centos"
 	exit 1  
 fi
 
