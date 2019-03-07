@@ -27,7 +27,7 @@ fi
 
 
 
-green "hello world with green color"
+green (hello world with green color)
 blue "hello world with blue color"
 
 bred "error info with blink"
