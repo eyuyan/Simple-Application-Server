@@ -14,9 +14,7 @@ green='\033[0;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
 
-	green ("hello world with green color")
-	blue "hello world with blue color"
-	
+
 #判断系统
 if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
 	echo "${green} 脚本已经测试系统centos7.3"
@@ -56,3 +54,7 @@ function bred(){
 function byellow(){
     echo -e "\033[33m\033[01m\033[05m[ $1 ]\033[0m"
 }
+
+green ("hello world with green color")
+blue "hello world with blue color"	
+echo -e "${green}[完成] ${plain}宝塔面板破解版已安装成功！"
