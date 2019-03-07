@@ -42,6 +42,7 @@ start_menu(){
 	start_menu
 	;;
 	2)
+	echo "正在. 卸载安骑士"
 	clean_aqs
 	##start_menu
 	;;
