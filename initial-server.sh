@@ -13,9 +13,9 @@ start_menu(){
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
     echo "====================================================================="
-    echo "1. 1安装相关依赖"
+    echo "1. 清理屏幕"
     echo "2. 2卸载安骑士"
-    echo "3. 3升级"
+    echo "3. 3安装相关依赖"
     echo "4. 4卸载"
     echo "5. 显示客户端二维码"
     echo "6. 增加用户"
@@ -25,6 +25,7 @@ start_menu(){
     case "$num" in
     	1)
 	#update_kernel
+	clear
 	start_menu
 	;;
 	2)
@@ -52,7 +53,7 @@ start_menu(){
 	exit 1
 	;;
 	*)
-	clear
+	#clear
 	echo "请输入正确数字"
 	sleep 5s
 	start_menu
