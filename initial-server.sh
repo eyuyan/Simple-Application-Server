@@ -16,22 +16,23 @@ plain='\033[0m'
 
 ##开始菜单
 start_menu(){
-    echo -e "${yellow}"
+    
     echo "====================================================================="
     echo "	System Required: CentOS 7"
     echo "	Description: initial server"
     echo "	Version: 0.1"
     echo "	Author: sxlszzy"
     echo "	address: https://github.com/sxlszzy/Simple-Application-Server/"
-    echo "=====================================================================${plain}"
-    echo "${blue}1. 清理屏幕"
+    echo "====================================================================="
+   echo -e "${yellow}"
+    echo "1. 清理屏幕"
     echo "2. 卸载安骑士"
     echo "3. XX"
     echo "4. XX"
     echo "5. XX"
     echo "6. XX"
     echo "0. 退出脚本"
-    echo -e "${plain}"
+   echo -e "${plain}"
     echo
     read -p "请输入数字:" num
     case "$num" in
