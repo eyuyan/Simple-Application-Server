@@ -141,7 +141,10 @@ service iptables restart
 echo "查看规则输入： ${red}iptables -L${plain}"
 echo "查看进程输入： ${red}ps -U root -u${plain}"
 echo "查看进程输入： ${red}chkconfig --list${plain}"
-
+    echo "3. XX"
+    echo "4. XX"
+    echo "5. XX"
+    echo "6. XX"
 }
 
 
