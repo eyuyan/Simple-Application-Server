@@ -3,7 +3,8 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #定义变量
 
-##颜色
+##颜色    
+##echo -e "${red}[填写文字]${plain}"
 blue='\033[0;34m'
 yellow='\033[0;33m'
 green='\033[0;32m'
@@ -15,8 +16,6 @@ plain='\033[0m'
 
 ##开始菜单
 start_menu(){
-    #clear
-    ##echo -e "${red}[版权]${plain}"
     echo -e "${yellow}"
     echo "====================================================================="
     echo "	System Required: CentOS 7"
@@ -68,7 +67,7 @@ start_menu(){
 	exit 1
 	;;
 	*)
-	#clear
+	##clear
 	echo "请输入正确数字"
 	#sleep 5s
 	start_menu
@@ -77,4 +76,63 @@ start_menu(){
 }
 
 start_menu
+
+## ==卸载安骑士==
+clean_aqs() {
+
+echo "# CentOS 安装依赖......."
+yum -y install curl
+
+echo "关闭firewalld防火墙......."
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+
+echo "[关闭]...云顿go语言......."
+/usr/local/cloudmonitor/CmsGoAgent.linux-amd64 stop && \
+/usr/local/cloudmonitor/CmsGoAgent.linux-amd64 uninstall && \
+rm -rf /usr/local/cloudmonitor
+
+echo "卸载阿里云盾监控......."
+wget http://update.aegis.aliyun.com/download/uninstall.sh  && sh uninstall.sh
+wget http://update.aegis.aliyun.com/download/quartz_uninstall.sh && sh quartz_uninstall.sh
+
+echo "删除残留......."
+pkill aliyun-service
+rm -fr /etc/init.d/agentwatch /usr/sbin/aliyun-service
+rm -rf /usr/local/aegis*
+
+echo "屏蔽阿里云盾恶意 IP......."
+iptables -I INPUT -s 140.205.201.0/28 -j DROP
+iptables -I INPUT -s 140.205.201.16/29 -j DROP
+iptables -I INPUT -s 140.205.201.32/28 -j DROP
+iptables -I INPUT -s 140.205.225.192/29 -j DROP
+iptables -I INPUT -s 140.205.225.200/30 -j DROP
+iptables -I INPUT -s 140.205.225.184/29 -j DROP
+iptables -I INPUT -s 140.205.225.183/32 -j DROP
+iptables -I INPUT -s 140.205.225.206/32 -j DROP
+iptables -I INPUT -s 140.205.225.205/32 -j DROP
+iptables -I INPUT -s 140.205.225.195/32 -j DROP
+iptables -I INPUT -s 140.205.225.204/32 -j DROP
+iptables -I INPUT -s 106.11.224.0/26 -j DROP
+iptables -I INPUT -s 106.11.224.64/26 -j DROP
+iptables -I INPUT -s 106.11.224.128/26 -j DROP
+iptables -I INPUT -s 106.11.224.192/26 -j DROP
+iptables -I INPUT -s 106.11.222.64/26 -j DROP
+iptables -I INPUT -s 106.11.222.128/26 -j DROP
+iptables -I INPUT -s 106.11.222.192/26 -j DROP
+iptables -I INPUT -s 106.11.223.0/26 -j DROP
+
+echo "初始化规则"
+yum install iptables-services -y
+
+echo "保存规则"
+service iptables save
+service iptables restart
+
+echo "查看规则输入： iptables -L"
+echo "查看进程输入： ps -U root -u"
+
+}
+
+
 
