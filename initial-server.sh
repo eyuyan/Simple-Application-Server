@@ -3,6 +3,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #定义变量
 #开始菜单
+
 start_menu(){
     clear
     echo "====================================================================="
