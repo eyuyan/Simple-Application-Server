@@ -2,6 +2,21 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #定义变量
+# 颜色
+blue='\033[0;34m'
+yellow='\033[0;33m'
+green='\033[0;32m'
+red='\033[0;31m'
+plain='\033[0m'
+
+#检查是否为Root
+[ $(id -u) != "0" ] && { echo -e "${red}[错误]${plain} 你必须以 root 用户执行此安装程序"; exit 1; }
+
+echo ""
+echo "欢迎安装宝塔面板Pro破解版！"
+echo ""
+echo -e "${red}[警告]"
+
 #开始菜单
 
 start_menu(){
