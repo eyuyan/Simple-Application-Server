@@ -9,6 +9,10 @@
 2 安装宝塔5.9
 
 
-一键脚本调用
+[自己]一键脚本调用
 
 wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh
+
+[其他]wireguard脚本
+yum install -y wget
+wget https://raw.githubusercontent.com/yigeni/WireGuard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
