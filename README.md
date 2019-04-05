@@ -18,16 +18,17 @@
 |BBR 原版/魔改/Plus/锐速 四合一   | wget "https://git.io/fjLzu" && chmod +x tcp.sh && ./tcp.sh|
 
 ---
-> * 参考链接:
-```
-https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
-https://www.southcity-oldboy.com/2027.html
-
-```
----
 
 | ||||
 | --------   | :-----  | :----  |:----  |
 | 提示证书错误     | yum -y install ca-certificates |   apt-get -y install ca-certificates     |
 | KVM架构        |    Centos 7| Debian 8/9| Ubuntu 16/18  |
 | 宝塔面板5.9.X Pro破解版一键脚本 | wget --no-check-certificate -qO crack_bt_panel_pro.sh https://git.io/fprzD && bash |
+
+---
+> * 参考链接:
+```
+https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
+https://www.southcity-oldboy.com/2027.html
+
+```
