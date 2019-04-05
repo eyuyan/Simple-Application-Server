@@ -14,9 +14,9 @@ wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh
 > * wireguard脚本
 参考:https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
 yum install -y wget
-
+```
 wget https://raw.githubusercontent.com/yigeni/WireGuard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
-
+```
 > * BBR 原版/魔改/Plus/锐速 四合一
 注意事项：
 本脚本支持KVM架构的VPS，不支持OpenVZ，在Vultr上 Centos 7, Debian 8/9, Ubuntu 16/18测试通过安装命令：
