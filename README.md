@@ -13,9 +13,9 @@
 
 |.|.|
 | :--------   | :-----  | 
-| 宝塔面板5.9.X Pro破解版一键脚本 | wget -O crack_bt_panel_pro.sh https://git.io/fprzD && ./crack_bt_panel_pro.sh |
-|删除安骑士                      | wget -O initial-server.sh https://git.io/fhpiq && ./initial-server.sh|
-|wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x tcp.sh && ./wireguard_install.sh |
+| 宝塔面板5.9.X Pro破解版一键脚本 | wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh |
+|删除安骑士                      | wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh|
+|wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x tcp.sh && bash wireguard_install.sh |
 |BBR 原版/魔改/Plus/锐速 四合一   | wget "https://git.io/fjLzu" && chmod +x tcp.sh && ./tcp.sh|
 
 ---
