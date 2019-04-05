@@ -10,7 +10,9 @@ wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh
 
 > * 删除安骑士
 
-``` wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh ```
+``` 
+wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh
+```
 
 > * wireguard脚本
 参考:https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
