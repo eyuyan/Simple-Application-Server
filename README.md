@@ -1,12 +1,17 @@
 # Simple-Application-Server - 2019.03.06购买的轻量应用服务器 （Simple Application Server）
 
-
+---
 
 |.|.|
 | :--------   | :-----  | 
 | 网址缩短链接     | https://git.io/ |
 |  Markdown 编辑阅读器     | https://www.zybuluo.com/mdeditor |
 | 安装wget        |   yum -y install wget  |
+
+---
+
+|.|.|
+| :--------   | :-----  | 
 | 宝塔面板5.9.X Pro破解版一键脚本 | wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh |
 |删除安骑士                      | wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh|
 |wireguard脚本                  | wget https://git.io/fjLzE && chmod +x wireguard_install.sh && ./wireguard_install.sh |
