@@ -1,6 +1,6 @@
 # Simple-Application-Server - 2019.03.06购买的轻量应用服务器 （Simple Application Server）
 
-网址缩短链接 https://git.io/
+
 
 |.|.|
 | :--------   | :-----  | 
