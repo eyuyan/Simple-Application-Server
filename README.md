@@ -7,6 +7,11 @@
 1 删除安骑士
 
 2 安装宝塔5.9
+宝塔面板5.9.X Pro破解版一键脚本
+使用方法
+
+wget --no-check-certificate -qO crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh
+wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh
 
 =====================================[自己]一键脚本调用
 
