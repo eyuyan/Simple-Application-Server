@@ -23,5 +23,4 @@ yum install -y wget
 | 提示证书错误     | yum -y install ca-certificates |   apt-get -y install ca-certificates     |
 | 安装wget        |   yum -y install wget  |
 | KVM架构        |    Centos 7| Debian 8/9| Ubuntu 16/18  |
-
 | 宝塔面板5.9.X Pro破解版一键脚本 | wget --no-check-certificate -qO crack_bt_panel_pro.sh https://git.io/fprzD && bash |
