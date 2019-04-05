@@ -11,9 +11,8 @@
 |BBR 原版/魔改/Plus/锐速 四合一   | wget "https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh|
 
 ---
-> * wireguard脚本
+> * 参考链接:
 ```
-参考链接:
 https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
 https://www.southcity-oldboy.com/2027.html
 
