@@ -13,12 +13,14 @@
 ---
 > * wireguard脚本
 ```
-参考:https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
-yum install -y wget
+参考链接:
+https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
+https://www.southcity-oldboy.com/2027.html
+
 ```
 ---
 
-| BBR 原版/魔改/Plus/锐速 四合一        ||||
+| ||||
 | --------   | :-----  | :----  |:----  |
 | 提示证书错误     | yum -y install ca-certificates |   apt-get -y install ca-certificates     |
 | 安装wget        |   yum -y install wget  |
