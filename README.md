@@ -31,3 +31,19 @@ yum install -y wget
 wget https://raw.githubusercontent.com/yigeni/WireGuard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 
 =====================================[其他]
+
+
+注意事项：
+本脚本支持KVM架构的VPS，不支持OpenVZ，在Vultr上 Centos 7, Debian 8/9, Ubuntu 16/18测试通过
+
+安装命令：
+wget "https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+如果没有wget，比如搬瓦工VPS，可以先安装wget
+
+yum -y install wget
+执行如何提示证书错误的话
+
+yum -y install ca-certificates
+或者
+
+apt-get -y install ca-certificates
