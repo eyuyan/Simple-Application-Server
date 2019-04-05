@@ -13,9 +13,8 @@
 
 |.|.|
 | :--------   | :-----  | 
-| 宝塔面板5.9.X Pro破解版一键脚本 | wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh |
-|删除安骑士                      | wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh|
-|wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x wireguard_install.sh && bash wireguard_install.sh |
+| 宝塔面板5.9.X Pro破解版一键脚本 | wget -O bt_pro.sh https://git.io/fprzD && chmod +x bt_pro.sh && bash bt_pro.sh |
+|删除安骑士                      | wget -O server.sh https://git.io/fhpiq && chmod +x server.sh && bash server.sh|
 |wireguard脚本                  | wget -O wireguard.sh https://git.io/fjLzE && chmod +x wireguard.sh && bash wireguard.sh |
 |BBR 原版/魔改/Plus/锐速 四合一   | wget -O tcp.sh "https://git.io/fjLzu" && chmod +x tcp.sh && bash tcp.sh|
 
@@ -27,6 +26,9 @@
 | KVM架构        |    Centos 7| Debian 8/9| Ubuntu 16/18  |
 | 宝塔面板5.9.X Pro破解版一键脚本 | wget --no-check-certificate -qO crack_bt_panel_pro.sh https://git.io/fprzD && bash |
 |wireguard脚本                  | wget https://git.io/fjLzE && chmod +x wireguard_install.sh && ./wireguard_install.sh |
+|wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x wireguard_install.sh && bash wireguard_install.sh |
+
+
 ---
 > * 参考链接:
 ```
