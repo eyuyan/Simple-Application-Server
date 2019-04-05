@@ -5,6 +5,7 @@
 |.|.|
 | :--------   | :-----  | 
 | 网址缩短链接     | https://git.io/ |
+|  Markdown 编辑阅读器     | https://www.zybuluo.com/mdeditor |
 | 安装wget        |   yum -y install wget  |
 | 宝塔面板5.9.X Pro破解版一键脚本 | wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh |
 |删除安骑士                      | wget -O initial-server.sh https://git.io/fhpiq && bash initial-server.sh|
