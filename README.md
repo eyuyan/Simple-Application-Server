@@ -13,10 +13,10 @@
 
 |.|.|
 | :--------   | :-----  | 
-| 宝塔面板5.9.X Pro破解版        | wget -O bt_pro.sh https://git.io/fprzD && chmod +x bt_pro.sh && bash bt_pro.sh |
 |删除安骑士                      | wget -O server.sh https://git.io/fhpiq && chmod +x server.sh && bash server.sh|
-|wireguard脚本                  | wget -O wireguard.sh https://git.io/fjLzE && chmod +x wireguard.sh && bash wireguard.sh |
+| 宝塔面板5.9.X Pro破解版        | wget -O bt_pro.sh https://git.io/fprzD && chmod +x bt_pro.sh && bash bt_pro.sh |
 |BBR原版/魔改/Plus/锐速/四合一   | wget -O tcp.sh "https://git.io/fjLzu" && chmod +x tcp.sh && bash tcp.sh|
+|wireguard脚本                  | wget -O wireguard.sh https://git.io/fjLzE && chmod +x wireguard.sh && bash wireguard.sh |
 
 ---
 
