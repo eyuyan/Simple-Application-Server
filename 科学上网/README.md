@@ -8,3 +8,5 @@
 |  # curl脚本可以使用菜单，方便选择 | # wget脚本是静默安装 | # 目前 WireGuard 脚本支持 IPV6，稳定有待测试  |  
 | curl脚本        |   bash <(curl -L -s https://git.io/vps.sh)  |
 | wget脚本        |   wget -qO- git.io/vps.sh | bash  |
+| # Telegram 代理 MTProxy Go版 一键脚本(源:逗比网)        |   wget -qO mtproxy_go.sh  git.io/fpWo4 && bash mtproxy_go.sh  |
+
