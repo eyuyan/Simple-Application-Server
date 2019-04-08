@@ -9,4 +9,9 @@
 | curl脚本        |   bash <(curl -L -s https://git.io/vps.sh)  |
 | wget脚本        |   wget -qO- git.io/vps.sh | bash  |
 | # Telegram 代理 MTProxy Go版 一键脚本(源:逗比网)        |   wget -qO mtproxy_go.sh  git.io/fpWo4 && bash mtproxy_go.sh  |
-
+|  。| 。|
+| V2Ray 和 Shadowsocks 配置显示二维码 bash | <(curl -L -s https://git.io/v2ray.ss) setup |
+| V2Ray 卸载命令	| bash <(curl -L -s https://install.direct/go.sh) --remove |
+|  。|。|
+| WireGuard 管理	| bash wgmtu	|
+| 卸载命令	| bash wgmtu remove |
