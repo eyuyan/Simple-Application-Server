@@ -29,12 +29,13 @@
 |wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x wireguard_install.sh && bash wireguard_install.sh |
 
 
----
-> * 参考链接:
-|.|.|
+
+|参考链接.|.|
 | :--------   | :-----  | 
 |一个逗比写的各种逗比脚本~|https://github.com/ToyoDAdoubi/doubi#ss_gosh|
 
+---
+> * 参考链接:
 ```
 https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
 https://www.southcity-oldboy.com/2027.html
