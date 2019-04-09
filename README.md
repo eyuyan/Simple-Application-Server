@@ -28,6 +28,8 @@
 |wireguard脚本                  | wget https://git.io/fjLzE && chmod +x wireguard_install.sh && ./wireguard_install.sh |
 |wireguard脚本                  | wget -O wireguard_install.sh https://git.io/fjLzE && chmod +x wireguard_install.sh && bash wireguard_install.sh |
 
+ss/ssr/vray订阅
+https://www.xn--9kq859m.xyz/auth/register?code=lhly
 
 
 |参考链接.|.|
