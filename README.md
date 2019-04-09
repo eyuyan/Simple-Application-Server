@@ -31,6 +31,10 @@
 
 ---
 > * 参考链接:
+|.|.|
+| :--------   | :-----  | 
+|一个逗比写的各种逗比脚本~|https://github.com/ToyoDAdoubi/doubi#ss_gosh|
+
 ```
 https://www.yigeni.com/wireguard-builds-8k-seconds-to-open-the-science-online/
 https://www.southcity-oldboy.com/2027.html
