@@ -30,6 +30,8 @@
 
 ss/ssr/vray订阅
 https://www.xn--9kq859m.xyz/auth/register?code=lhly
+ssr下载
+https://github.com/erguotou520/electron-ssr/releases
 
 
 |参考链接.|.|
